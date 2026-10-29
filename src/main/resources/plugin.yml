@@ -1,0 +1,37 @@
+name: RZVanish
+version: ${project.version}
+main: ir.rz.rzvanish.RZVanish
+api-version: '1.20'
+author: RZ
+description: A fully customizable advanced vanish plugin.
+softdepend: [PlaceholderAPI]
+commands:
+  vanish:
+    description: Main RZVanish command.
+    aliases: [v, rzvanish]
+    usage: /<command> [reload|priority|list|status|set|toggle|interact]
+permissions:
+  rzvanish.*:
+    default: op
+    children:
+      rzvanish.use: true
+      rzvanish.reload: true
+      rzvanish.priority: true
+      rzvanish.list: true
+      rzvanish.status: true
+      rzvanish.others: true
+      rzvanish.see: true
+      rzvanish.interact: true
+  rzvanish.use: {default: op}
+  rzvanish.reload: {default: op}
+  rzvanish.priority: {default: op}
+  rzvanish.list: {default: op}
+  rzvanish.status: {default: op}
+  rzvanish.others: {default: op}
+  rzvanish.see: {default: op}
+  rzvanish.interact: {default: false}
+  rzvanish.priority.1: {default: false}
+  rzvanish.priority.2: {default: false}
+  rzvanish.priority.3: {default: false}
+  rzvanish.priority.4: {default: false}
+  rzvanish.priority.5: {default: false}

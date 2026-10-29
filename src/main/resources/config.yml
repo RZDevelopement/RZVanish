@@ -1,0 +1,53 @@
+check-updates: true
+persist-vanish: false
+vanish-on-join: false
+
+fake-join-quit:
+  enabled: true
+  join: "&e{player} joined the game"
+  quit: "&e{player} left the game"
+
+messages:
+  prefix: "&8[&bRZVanish&8] &7"
+  vanished: "&aYou are now &lVANISHED&a."
+  unvanished: "&eYou are now &lVISIBLE&e."
+  no-permission: "&cYou don't have permission."
+  player-not-found: "&cPlayer &e{player} &cnot found."
+  reloaded: "&aConfiguration reloaded."
+  vanished-other: "&aYou vanished &e{player}&a."
+  unvanished-other: "&eYou unvanished &e{player}&e."
+  status-vanished: "&e{player} &ais currently vanished."
+  status-visible: "&e{player} &cis not vanished."
+  list-header: "&8&m----&r &bVanished Players &8&m----"
+  list-entry: "&7- &b{player} &7(priority: {priority})"
+  list-empty: "&7No players are vanished."
+  priority-self: "&aYour vanish priority: &e{priority}"
+  priority-other: "&e{player}'s vanish priority: &a{priority}"
+  interact-on: "&aInteractions enabled while vanished."
+  interact-off: "&cInteractions disabled while vanished."
+  usage: "&cUsage: /vanish [reload^|priority^|list^|status^|set^|toggle^|interact]"
+
+blocked-actions:
+  block-break: true
+  block-place: true
+  interact: true
+  attack-entities: true
+  receive-damage: true
+  pickup-items: true
+  drop-items: true
+  mob-target: true
+  hunger: true
+
+potion-effects:
+  - "INVISIBILITY:1"
+  - "NIGHT_VISION:1"
+
+options:
+  fly: true
+  keep-fly-on-unvanish: false
+  broadcast-fake-messages: true
+  hide-from-tab: false
+
+priorities:
+  enabled: true
+  default: 5
